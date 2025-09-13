@@ -88,11 +88,3 @@ describe('Automation-Exercise', () => {
   });
 });
 
-
-
-// Note: Two intermittent Cypress issues observed:
-// 1. Form input not always found due to async rendering.
-// 2. Delete verification occasionally fails due to DOM/API timing.
-// Manual checks confirm that functionality works correctly.
-
-

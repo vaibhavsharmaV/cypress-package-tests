@@ -17,10 +17,10 @@ All scenarios have been **manually verified**:
 
 ## Automation Observations
 
-While the automation test runs successfully most of the time, two intermittent issues persist:
+While the automation test runs successfully most of the time, two intermittent issues persist
 
-1. **Form Input Not Found** – `input[formcontrolname="name"]` sometimes fails due to asynchronous rendering of Angular/React components.
-2. **Delete Verification Fails** – Cypress sometimes cannot confirm the deleted package disappears because of DOM/API timing.
+1. Post-Add Navigation Flakiness – After adding a package, the app sometimes remains on the Add Package Type form (?id=new) instead of returning to the Package List. Cypress then fails to verify the package, even though it was created successfully in the backend.
+2. Delete Verification Fails – Cypress sometimes cannot confirm the deleted package disappears because of DOM/API timing.
 
 ### Debugging Steps Taken
 
